@@ -35,3 +35,18 @@ codegen/
 # buildtool cache folder
 .buildtool/
 
+# Ignore hidden system files
+.DS_Store
+Thumbs.db
+
+# Ignore MATLAB temp folders
+.matlab/
+
+# Ignore data files (optional)
+*.mat
+*.fig
+
+# Ignore log/output/debug files
+*.log
+*.bak
+*.tmp

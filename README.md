@@ -2,8 +2,6 @@
 
 This repository contains practice micro-projects in MATLAB, including simulations, numerical solvers, and data visualization.
 
-## Structure
-
 ## Functions:
 - `fib/` - Fibonacci computation with preallocation
 - `contour/` - 

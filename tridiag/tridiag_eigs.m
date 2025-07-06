@@ -20,10 +20,12 @@ function [IamSparse,IamFull,tSparse,tFull] = tridiag_eigs(n,k)
 
     
     %  2.  Sparse Solver
-    tic
-    IamSparse = eigs(A,k,'largestreal');
-    tSparse = toc;
-
+    tic                                       %  Timer Starts 
+    IamSparse = eigs(A,k,'largestreal');      %  Finding k real Eigenvalues
+    tSparse = toc;                            %  Timer Ends and gets stored 
+                                          % eigs() exploits the
+                                          % sparsity of A and is hence less
+                                          % time consuming.
     %  3.  Dense Solver
     tic
     IamFull = eig(full(A));
